@@ -81,6 +81,7 @@ OpenShiftLibrary uses the repository api to get the data without clone the repos
 Library      OpenShiftLibrary
 
 *** Test Cases ***
+Get Service From Github
   Oc Create  kind=Service  src=https://api.github.com/repos/pablofelix/robotframework-openshift/contents/test-data/service.yaml?ref\=/master  namespace=test-services
 ```
 ### Real Time
@@ -100,7 +101,6 @@ Example: Getting the data field
 
 ```
 *** Settings ***
-Documentation     OpenShiftLibrary Library
 Library      OpenShiftLibrary
 
 *** Test Cases ***
